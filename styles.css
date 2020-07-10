@@ -38,10 +38,18 @@ main {
   border: 1px solid #dbdbdb;
 }
 
-#topbar .content {
+.profile-icon.lg {
+  width: 30px;
+  height: 30px;
+}
+
+.content {
   width: 900px;
-  height: 100%;
   margin: 0 auto;
+}
+
+#topbar .content {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,4 +73,103 @@ main {
   height: 20px;
   border-radius: 5px;
   outline: none;
+}
+
+#main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+
+  display: grid;
+  grid-template-columns: 600px 280px;
+  column-gap: 20px;
+}
+
+.post {
+  width: 600px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.post-header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-account {
+  display: flex;
+}
+
+.post-account-name {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.post-account-location {
+  font-size: 0.8em;
+}
+
+.post-account > .profile-icon {
+  margin-right: 10px;
+}
+
+.post-header > img {
+  cursor: pointer;
+}
+
+.post-image {
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  padding: 0 15px;
+}
+
+.post-content-line {
+  margin-bottom: 3px;
+  line-height: 1.4em;
+}
+
+.action-icons {
+  width: auto;
+}
+
+.action-icons > img {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.bookmark-icon {
+  float: right;
+}
+
+.post-caption {
+  font-size: 0.9em;
+}
+
+.post-caption-name {
+  font-weight: bold;
+}
+
+.post-timestamp {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.write-comment-area {
+  width: 100%;
+  background-color: #fafafa;
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  padding: 20px 0;
+  resize: none;
+  font-family: inherit;
 }
