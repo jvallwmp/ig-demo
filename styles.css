@@ -24,9 +24,10 @@ main {
   background-color: #fff;
   border-bottom: 1px solid #dbdbdb;
   margin-bottom: 20px;
+  flex-shrink: 0;
 }
 
-#posts-container {
+#posts {
   flex-grow: 1;
   overflow-y: auto;
 }
@@ -83,7 +84,7 @@ main {
 
 #main-content {
   flex-grow: 1;
-  overflow-y: auto;
+  overflow-y: hidden;
 
   display: grid;
   grid-template-columns: 600px 280px;
@@ -91,7 +92,7 @@ main {
 }
 
 .post {
-  width: 600px;
+  width: 555px;
   border: 1px solid #dbdbdb;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -125,7 +126,7 @@ main {
 }
 
 .post-image {
-  width: 600px;
+  width: 555px;
   height: 450px;
   object-fit: cover;
   margin-bottom: 10px;
